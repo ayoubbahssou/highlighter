@@ -1,0 +1,20 @@
+   
+        .highlight-button{
+            background: url('highlight.png') left center no-repeat;
+            padding-left: 25px;
+            padding-bottom: 25px;
+            background-size:cover;
+        }
+        .save-button{
+            background: url('save.png') left center no-repeat;
+            padding-left: 25px;
+            padding-bottom: 25px;
+	    background-size:cover;
+        }
+        .get-button{
+            background: url('get.png') left center no-repeat;
+            padding-left: 35px;
+            padding-bottom: 25px;
+	    background-size:cover;
+        }
+    

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "highlighter",
+  "description": "This extensions enables its users to highlight important text and save it in the browser storage in order to  get it back anytime they revisit the webpage ",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "highlight.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab" ,
+     "storage"
+  ],
+  "content_scripts":
+[
+  {
+    "matches": ["http://*/*" ,"https://*/*" ],
+    "js": ["content.js"]
+  }
+]
+}
