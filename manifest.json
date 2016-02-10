@@ -19,5 +19,6 @@
     "matches": ["http://*/*" ,"https://*/*" ],
     "js": ["content.js"]
   }
-]
+],
+  ,"options_page" : "options.html"
 }

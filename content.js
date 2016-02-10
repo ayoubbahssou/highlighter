@@ -2,6 +2,15 @@
 var highlights={};
 highlights.url  =window.location.href;
 highlights.selections=[];
+
+var color ;
+
+chrome.storage.sync.get('Color', function (result)
+{
+    color = result.Color;
+});
+
+
 //listen to messages from popup.js
 chrome.extension.onMessage.addListener(function(message, sender, sendResponse)
 {
@@ -73,7 +82,7 @@ function highlight() {
     var selectionContents   = range.extractContents();
     var span                = document.createElement("span");
     span.appendChild(selectionContents);
-    span.style.backgroundColor  = "red";
+    span.style.backgroundColor  = color;
     span.style.color            = "white";
     range.insertNode(span);
     //add the selected text to the highlights object
